@@ -1,4 +1,11 @@
 # gatsby-starter-forty
+
+**This is a starter for Gatsby.js V1.**
+
+**A newer version of this starter for Gatsby.js V2 can be found at:**
+<br/>
+**https://github.com/codebushi/gatsby-starter-forty-v2**
+
 Gatsby starter based on the Forty site template, designed by [HTML5 UP](https://html5up.net/forty). Check out https://hunterchang.com/gatsby-starters/ for more Gatsby starters and templates.
 
 ## Preview
