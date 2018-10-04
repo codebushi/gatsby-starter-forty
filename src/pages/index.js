@@ -1,6 +1,7 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
+import Layout from '../components/layout'
 import Banner from '../components/Banner'
 
 import pic01 from '../assets/images/pic01.jpg'
@@ -12,14 +13,16 @@ import pic06 from '../assets/images/pic06.jpg'
 
 class HomeIndex extends React.Component {
     render() {
-        const siteTitle = this.props.data.site.siteMetadata.title
-        const siteDescription = this.props.data.site.siteMetadata.description
 
         return (
-            <div>
-                <Helmet>
-                    <title>{siteTitle}</title>
-                    <meta name="description" content={siteDescription} />
+            <Layout>
+                <Helmet
+                    title="Gatsby Starter - Forty"
+                    meta={[
+                        { name: 'description', content: 'Sample' },
+                        { name: 'keywords', content: 'sample, something' },
+                    ]}
+                >
                 </Helmet>
 
                 <Banner />
@@ -82,20 +85,9 @@ class HomeIndex extends React.Component {
                     </section>
                 </div>
 
-            </div>
+            </Layout>
         )
     }
 }
 
 export default HomeIndex
-
-export const pageQuery = graphql`
-    query PageQuery {
-        site {
-            siteMetadata {
-                title
-                description
-            }
-        }
-    }
-`

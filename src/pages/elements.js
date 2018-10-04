@@ -1,6 +1,6 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
+import Layout from '../components/layout'
 
 import pic03 from '../assets/images/pic03.jpg'
 import pic08 from '../assets/images/pic08.jpg'
@@ -8,7 +8,7 @@ import pic09 from '../assets/images/pic09.jpg'
 import pic10 from '../assets/images/pic10.jpg'
 
 const Elements = (props) => (
-    <div>
+    <Layout>
         <Helmet>
             <title>Elements - Forty by HTML5 UP</title>
             <meta name="description" content="Elements Page" />
@@ -24,24 +24,24 @@ const Elements = (props) => (
 
                     <h2 id="content">Sample Content</h2>
                     <p>Praesent ac adipiscing ullamcorper semper ut amet ac risus. Lorem sapien ut odio odio nunc. Ac adipiscing nibh porttitor erat risus justo adipiscing adipiscing amet placerat accumsan. Vis. Faucibus odio magna tempus adipiscing a non. In mi primis arcu ut non accumsan vivamus ac blandit adipiscing adipiscing arcu metus praesent turpis eu ac lacinia nunc ac commodo gravida adipiscing eget accumsan ac nunc adipiscing adipiscing.</p>
-                    <div className="row">
-                        <div className="6u 12u$(small)">
+                    <div className="grid-wrapper">
+                        <div className="col-6">
                             <h3>Sem turpis amet semper</h3>
                             <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat commodo eu sed ante lacinia. Sapien a lorem in integer ornare praesent commodo adipiscing arcu in massa commodo lorem accumsan at odio massa ac ac. Semper adipiscing varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
                         </div>
-                        <div className="6u 12u$(small)">
+                        <div className="col-6">
                             <h3>Magna odio tempus commodo</h3>
                             <p>In arcu accumsan arcu adipiscing accumsan orci ac. Felis id enim aliquet. Accumsan ac integer lobortis commodo ornare aliquet accumsan erat tempus amet porttitor. Ante commodo blandit adipiscing integer semper orci eget. Faucibus commodo adipiscing mi eu nullam accumsan morbi arcu ornare odio mi adipiscing nascetur lacus ac interdum morbi accumsan vis mi accumsan ac praesent.</p>
                         </div>
-                        <div className="4u 12u$(medium)">
+                        <div className="col-4">
                             <h3>Interdum sapien gravida</h3>
                             <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
                         </div>
-                        <div className="4u 12u$(medium)">
+                        <div className="col-4">
                             <h3>Faucibus consequat lorem</h3>
                             <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
                         </div>
-                        <div className="4u 12u$(medium)">
+                        <div className="col-4">
                             <h3>Accumsan montes viverra</h3>
                             <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
                         </div>
@@ -50,8 +50,8 @@ const Elements = (props) => (
                     <hr className="major" />
 
                     <h2 id="elements">Elements</h2>
-                    <div className="row 200%">
-                        <div className="6u 12u(medium)">
+                    <div className="grid-wrapper">
+                        <div className="col-6">
 
                                 <h3>Text</h3>
                                 <p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
@@ -66,8 +66,8 @@ const Elements = (props) => (
                                 <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
 
                                 <h3>Lists</h3>
-                                <div className="row">
-                                    <div className="6u 12u(small)">
+                                <div className="grid-wrapper">
+                                    <div className="col-6">
 
                                         <h4>Unordered</h4>
                                         <ul>
@@ -84,7 +84,7 @@ const Elements = (props) => (
                                         </ul>
 
                                     </div>
-                                    <div className="6u 12u(small)">
+                                    <div className="col-6">
 
                                         <h4>Ordered</h4>
                                         <ol>
@@ -138,26 +138,26 @@ const Elements = (props) => (
                                     <li><a href="#" className="button special small">Small</a></li>
                                     <li><a href="#" className="button small">Small</a></li>
                                 </ul>
-                                <div className="row">
-                                    <div className="6u 12u(small)">
+                                <div className="grid-wrapper">
+                                    <div className="col-6">
                                         <ul className="actions vertical">
                                             <li><a href="#" className="button special">Default</a></li>
                                             <li><a href="#" className="button">Default</a></li>
                                         </ul>
                                     </div>
-                                    <div className="6u 12u(small)">
+                                    <div className="col-6">
                                         <ul className="actions vertical small">
                                             <li><a href="#" className="button special small">Small</a></li>
                                             <li><a href="#" className="button small">Small</a></li>
                                         </ul>
                                     </div>
-                                    <div className="6u 12u(small)">
+                                    <div className="col-6">
                                         <ul className="actions vertical">
                                             <li><a href="#" className="button special fit">Default</a></li>
                                             <li><a href="#" className="button fit">Default</a></li>
                                         </ul>
                                     </div>
-                                    <div className="6u 12u(small)">
+                                    <div className="col-6">
                                         <ul className="actions vertical small">
                                             <li><a href="#" className="button special small fit">Small</a></li>
                                             <li><a href="#" className="button small fit">Small</a></li>
@@ -276,7 +276,7 @@ const Elements = (props) => (
                                 </div>
 
                         </div>
-                        <div className="6u 12u(medium)">
+                        <div className="col-6">
 
                                 <h3>Buttons</h3>
                                 <ul className="actions">
@@ -313,17 +313,17 @@ const Elements = (props) => (
                                 <h3>Form</h3>
 
                                 <form method="post" action="#">
-                                    <div className="row uniform">
-                                        <div className="6u 12u(xsmall)">
-                                            <input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+                                    <div className="grid-wrapper">
+                                        <div className="col-6">
+                                            <div className="mb-5"><input type="text" name="demo-name" id="demo-name" defaultValue="" placeholder="Name" /></div>
                                         </div>
-                                        <div className="6u 12u(xsmall)">
-                                            <input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+                                        <div className="col-6">
+                                            <div className="mb-5"><input type="email" name="demo-email" id="demo-email" defaultValue="" placeholder="Email" /></div>
                                         </div>
-                                        <div className="12u">
-                                            <div className="select-wrapper">
+                                        <div className="col-12">
+                                            <div className="select-wrapper mb-5">
                                                 <select name="demo-category" id="demo-category">
-                                                    <option value="">- Category -</option>
+                                                    <option defaultValue="">- Category -</option>
                                                     <option value="1">Manufacturing</option>
                                                     <option value="1">Shipping</option>
                                                     <option value="1">Administration</option>
@@ -331,30 +331,42 @@ const Elements = (props) => (
                                                 </select>
                                             </div>
                                         </div>
-                                        <div className="4u 12u(small)">
-                                            <input type="radio" id="demo-priority-low" name="demo-priority" checked />
-                                            <label htmlFor="demo-priority-low">Low</label>
+                                        <div className="col-4">
+                                            <div className="mb-5">
+                                                <input type="radio" id="demo-priority-low" name="demo-priority" defaultChecked />
+                                                <label htmlFor="demo-priority-low">Low</label>
+                                            </div>
                                         </div>
-                                        <div className="4u 12u(small)">
-                                            <input type="radio" id="demo-priority-normal" name="demo-priority" />
-                                            <label htmlFor="demo-priority-normal">Normal</label>
+                                        <div className="col-4">
+                                            <div className="mb-5">
+                                                <input type="radio" id="demo-priority-normal" name="demo-priority" />
+                                                <label htmlFor="demo-priority-normal">Normal</label>
+                                            </div>
                                         </div>
-                                        <div className="4u 12u(small)">
-                                            <input type="radio" id="demo-priority-high" name="demo-priority" />
-                                            <label htmlFor="demo-priority-high">High</label>
+                                        <div className="col-4">
+                                            <div className="mb-5">
+                                                <input type="radio" id="demo-priority-high" name="demo-priority" />
+                                                <label htmlFor="demo-priority-high">High</label>
+                                            </div>
                                         </div>
-                                        <div className="6u 12u(small)">
-                                            <input type="checkbox" id="demo-copy" name="demo-copy" />
-                                            <label htmlFor="demo-copy">Email me a copy</label>
+                                        <div className="col-6">
+                                            <div className="mb-5">
+                                                <input type="checkbox" id="demo-copy" name="demo-copy" />
+                                                <label htmlFor="demo-copy">Email me a copy</label>
+                                            </div>
                                         </div>
-                                        <div className="6u 12u(small)">
-                                            <input type="checkbox" id="demo-human" name="demo-human" checked />
-                                            <label htmlFor="demo-human">I am a human</label>
+                                        <div className="col-6">
+                                            <div className="mb-5">
+                                                <input type="checkbox" id="demo-human" name="demo-human" defaultChecked />
+                                                <label htmlFor="demo-human">I am a human</label>
+                                            </div>
                                         </div>
-                                        <div className="12u">
-                                            <textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+                                        <div className="col-12">
+                                            <div className="mb-5">
+                                                <textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+                                            </div>
                                         </div>
-                                        <div className="12u">
+                                        <div className="col-12">
                                             <ul className="actions">
                                                 <li><input type="submit" value="Send Message" className="special" /></li>
                                                 <li><input type="reset" value="Reset" /></li>
@@ -368,16 +380,16 @@ const Elements = (props) => (
                                 <h4>Fit</h4>
                                 <span className="image fit"><img src={pic03} alt="" /></span>
                                 <div className="box alt">
-                                    <div className="row 50% uniform">
-                                        <div className="4u"><span className="image fit"><img src={pic08} alt="" /></span></div>
-                                        <div className="4u"><span className="image fit"><img src={pic09} alt="" /></span></div>
-                                        <div className="4u"><span className="image fit"><img src={pic10} alt="" /></span></div>
-                                        <div className="4u"><span className="image fit"><img src={pic10} alt="" /></span></div>
-                                        <div className="4u"><span className="image fit"><img src={pic08} alt="" /></span></div>
-                                        <div className="4u"><span className="image fit"><img src={pic09} alt="" /></span></div>
-                                        <div className="4u"><span className="image fit"><img src={pic09} alt="" /></span></div>
-                                        <div className="4u"><span className="image fit"><img src={pic10} alt="" /></span></div>
-                                        <div className="4u"><span className="image fit"><img src={pic08} alt="" /></span></div>
+                                    <div className="grid-wrapper">
+                                        <div className="col-4"><span className="image fit"><img src={pic08} alt="" /></span></div>
+                                        <div className="col-4"><span className="image fit"><img src={pic09} alt="" /></span></div>
+                                        <div className="col-4"><span className="image fit"><img src={pic10} alt="" /></span></div>
+                                        <div className="col-4"><span className="image fit"><img src={pic10} alt="" /></span></div>
+                                        <div className="col-4"><span className="image fit"><img src={pic08} alt="" /></span></div>
+                                        <div className="col-4"><span className="image fit"><img src={pic09} alt="" /></span></div>
+                                        <div className="col-4"><span className="image fit"><img src={pic09} alt="" /></span></div>
+                                        <div className="col-4"><span className="image fit"><img src={pic10} alt="" /></span></div>
+                                        <div className="col-4"><span className="image fit"><img src={pic08} alt="" /></span></div>
                                     </div>
                                 </div>
 
@@ -404,7 +416,7 @@ const Elements = (props) => (
 
         </div>
 
-    </div>
+    </Layout>
 )
 
 export default Elements

@@ -1,14 +1,13 @@
 import React from 'react'
-import Helmet from 'react-helmet'
-import { Link, withPrefix } from 'gatsby-link'
+import PropTypes from 'prop-types'
+
 import '../assets/scss/main.scss'
-import Header from '../components/Header'
-import Menu from '../components/Menu'
-import Contact from '../components/Contact'
-import Footer from '../components/Footer'
+import Header from './Header'
+import Menu from './Menu'
+import Contact from './Contact'
+import Footer from './Footer'
 
-class Template extends React.Component {
-
+class Layout extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -41,12 +40,9 @@ class Template extends React.Component {
 
         return (
             <div className={`body ${this.state.loading} ${this.state.isMenuVisible ? 'is-menu-visible' : ''}`}>
-                <Helmet>
-                    <link rel="stylesheet" href={withPrefix('skel.css')} />
-                </Helmet>
                 <div id="wrapper">
                     <Header onToggleMenu={this.handleToggleMenu} />
-                    {children()}
+                    {children}
                     <Contact />
                     <Footer />
                 </div>
@@ -56,8 +52,4 @@ class Template extends React.Component {
     }
 }
 
-Template.propTypes = {
-    children: React.PropTypes.func
-}
-
-export default Template
+export default Layout

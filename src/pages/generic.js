@@ -1,11 +1,11 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
+import Layout from '../components/layout'
 
 import pic11 from '../assets/images/pic11.jpg'
 
 const Generic = (props) => (
-    <div>
+    <Layout>
         <Helmet>
             <title>Generic - Forty by HTML5 UP</title>
             <meta name="description" content="Generic Page" />
@@ -25,7 +25,7 @@ const Generic = (props) => (
             </section>
         </div>
 
-    </div>
+    </Layout>
 )
 
 export default Generic

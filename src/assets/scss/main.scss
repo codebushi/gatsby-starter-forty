@@ -5,6 +5,8 @@
 @import '../css/font-awesome.min.css';
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic');
 
+@import "css-grid";
+
 /*
 	Forty by HTML5 UP
 	html5up.net | @ajlkn
@@ -22,16 +24,7 @@
 
 	@include skel-layout((
 		reset: 'full',
-		boxModel: 'border',
-		// grid: ( gutters: 2em ),
-		// breakpoints: (
-		// 	large: (
-		// 		grid: ( gutters: 1.5em )
-		// 	),
-		// 	small: (
-		// 		grid: ( gutters: 1.25em )
-		// 	)
-		// )
+		boxModel: 'border'
 	));
 
 	@mixin inner {
